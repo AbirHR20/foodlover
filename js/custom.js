@@ -22,7 +22,7 @@ $(document).ready(function(){
     //type js
 
     var typed = new Typed('.element', {
-        strings: ["Breakfast", "Launch", "Dinner"],
+        strings: ["Breakfast", "Lunch", "Dinner"],
         typeSpeed: 70,
         loop : true,
       });
