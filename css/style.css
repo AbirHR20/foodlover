@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root{
+    --hf :'aachen-bt-roman', sans-serif;
+    --ff : 'Montserrat', sans-serif;
+    --brand : #e58f00 ;
+    --brand2 : #28282d ;
+}
+
+/*
+root css ends
+*/
+
+.ar{
+    font-family: var(--hf);
+}
+
+.mb{
+    font-family: var(--ff);
+    font-weight: 700;
+}
+
+/*
+font family css ends
+*/
+
+.fs-16{
+    font-size: 16px;
+}
+
+.fs-20{
+    font-size: 20px;
+}
+
+.fs-25{
+    font-size: 25px;
+}
+
+.fs-29{
+    font-size: 29px;
+}
+
+.fs-33{
+    font-size: 33px;
+}
+
+.fs-50{
+    font-size: 50px;
+}
+
+.fs-66{
+    font-size: 66px;
+}
+
+/*
+font size css ends
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+
+/*
+commmon css ends
+*/
+
+nav{
+    background: rgba(40, 40, 45, 0.5);
+    z-index: 9999;
+}
+
+.navfix{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: var(--brand);
+    animation: fix linear 1s;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+@keyframes fix{
+    from{
+        top: -50px;
+    }
+    to{
+        top: 0px;
+    }
+}
+
+/*
+nav css ends
+*/
+
+#banner .banner{
+    background-image: url(../images/banner-back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    padding-top: 242px;
+    padding-bottom: 120px;
+}
+
+#banner .banner::after{
+    content: '';
+    background: rgba(40, 40, 45, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#banner .banner-text{
+    padding-top: 65px;
+}
+
+#banner .banner-text h1{
+    color: var(--brand);
+}
+
+#banner .banner-text h2{
+    padding: 30px 0;
+}
+
+#banner .banner-text .btn {
+    background-color: var(--brand);
+    border: none;
+}
+
+#banner .banner-text .btn a{
+    color: #ffff;
+}
+
+/*
+banner css ends
+*/
+
+#about .about{
+    background-color: var(--brand2);
+    padding-top: 120px;
+    padding-bottom: 77px;
+}
+
+#about .about .about-text header{
+    padding-top: 120px;
+}
+
+/*
+about css ends
+*/
+
+#quality .quality{
+    background-color: var(--brand2);
+    padding-bottom: 400px;
+    padding-top: 100px;
+}
+
+#quality .quality .q1{
+    bottom: 70%;
+    right: 0;
+}
+
+#quality .quality .q1 img{
+    transform: translate(0.5),rotate(180deg);
+    -webkit-transform: translate(0.5),rotate(180deg);
+    -moz-transform: translate(0.5),rotate(180deg);
+    -ms-transform: translate(0.5),rotate(180deg);
+    -o-transform: translate(0.5),rotate(180deg);
+}
+
+#quality .quality .q-text{
+    background-image: url(../images/quality-back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#quality .quality .q-text{
+    padding-top: 230px;
+}
+
+#quality .quality .q-text h2{
+    padding-bottom: 230px;
+}
+
+
+#quality .quality .q2{
+    bottom: 5%;
+    left: 0;
+}
+
+/*
+quality css ends
+*/
+
+#gallery .gallery{
+    background-color: var(--brand2);
+    padding-bottom: 165px;
+}
+
+#gallery .gallery header{
+    padding-bottom: 95px;
+}
+
+/*
+gallery css ends
+*/
+
+#enjoy .enjoy{
+    background-image: url(../images/enjoy-back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0px;
+}
+
+#enjoy .enjoy .enjoy-text{
+    border: 8px solid var(--brand);
+    padding: 50px;
+}
+
+/*
+enjoy css ends
+*/
+
+#menu .menu{
+    background-color: var(--brand2);
+    padding-bottom: 190px;
+}
+
+#menu .menu header{
+    padding-top: 170px;
+    padding-bottom: 80px;
+}
+
+#menu .menu .menu-item h2{
+    color: var(--brand);
+    padding-top: 40px;
+}
+
+#menu .menu .menu-item p{
+    padding: 20px 0px;
+}
+
+#menu .menu .menu-item h3{
+    color: var(--brand);
+}
+
+/*
+menu css ends
+*/
+
+#meal .meal{
+    background-color: var(--brand);
+}
+
+#meal .meal .meal-im img{
+    transform: translate(0.8);
+    -webkit-transform: translate(0.8);
+    -moz-transform: translate(0.8);
+    -ms-transform: translate(0.8);
+    -o-transform: translate(0.8);
+}
+
+#meal .meal .meal-text{
+    padding-top: 180px;
+}
+
+/*
+meal css ends
+*/
+
+footer{
+    background-color: var(--brand2);
+}
+
+footer .flogo{
+    padding-top: 80px;
+}
+
+footer .fmenu{
+    padding: 50px 0px; 
+}
+
+footer .ficon{
+    padding-bottom: 100px;
+}
